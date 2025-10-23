@@ -68,7 +68,7 @@ docker run -d \
   --name lidarr-ytdlp \
   -p 5004:5004 \
   -v /path/to/music:/music \
-  -e LIDARR_URL=http://192.168.5.47:8686/api/v1 \
+  -e LIDARR_URL=http://localhost:8686/api/v1 \
   -e LIDARR_API_KEY=changeme \
   lpuffyy/lidarr-ytdlp
 ⚙️ Environment Variables
