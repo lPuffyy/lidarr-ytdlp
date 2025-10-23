@@ -28,7 +28,7 @@ services:
       - "5004:5004" # Dashboard port
     environment:
       - TZ=Etc/UTC
-      - LIDARR_URL=http://192.168.5.47:8686/api/v1
+      - LIDARR_URL=http://localhost:8686/api/v1
       - LIDARR_API_KEY=changeme
       - MUSIC_DIR=/music
       - CHECK_INTERVAL=3600  # how often to check (in seconds)
@@ -68,7 +68,7 @@ docker build -t lpuffyy/lidarr-ytdlp .
 
 Run it manually:
 ```bash
-docker run -d   --name lidarr-ytdlp   -p 5004:5004   -e LIDARR_URL=http://192.168.5.47:8686/api/v1   -e LIDARR_API_KEY=changeme   -v /path/to/music:/music   lpuffyy/lidarr-ytdlp
+docker run -d   --name lidarr-ytdlp   -p 5004:5004   -e LIDARR_URL=http://localhost:8686/api/v1   -e LIDARR_API_KEY=changeme   -v /path/to/music:/music   lpuffyy/lidarr-ytdlp
 ```
 
 ---
@@ -77,7 +77,7 @@ docker run -d   --name lidarr-ytdlp   -p 5004:5004   -e LIDARR_URL=http://192.16
 
 | Variable | Description | Default |
 |-----------|--------------|----------|
-| `LIDARR_URL` | URL to Lidarr API (e.g., `http://192.168.5.47:8686/api/v1`) | `http://localhost:8686/api/v1` |
+| `LIDARR_URL` | URL to Lidarr API (e.g., `http://localhost/api/v1`) | `http://localhost:8686/api/v1` |
 | `LIDARR_API_KEY` | Your Lidarr API key (Settings → General) | *(required)* |
 | `MUSIC_DIR` | Directory where MP3s are saved | `/music` |
 | `CHECK_INTERVAL` | Time in seconds between checks for wanted albums | `3600` |
