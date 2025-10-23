@@ -3,7 +3,7 @@
 It monitors your Lidarr wanted albums, finds matching YouTube audio, downloads and tags tracks, then triggers a rescan so Lidarr can import them automatically.
 
 <p align="center">
-  <img src="docs/screenshot1.png" alt="Museerr Dashboard" width="25%">
+  <img src="docs/screenshot1.png" alt="lidarr-ytdlp monitor" width="25%">
 </p>
 ---
 
