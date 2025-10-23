@@ -27,7 +27,7 @@ services:
       - "5004:5004"          # Dashboard port
     environment:
       - TZ=Etc/UTC
-      - LIDARR_URL=http://192.168.5.47:8686/api/v1
+      - LIDARR_URL=http://localhost:8686/api/v1
       - LIDARR_API_KEY=changeme
       - MUSIC_DIR=/music
       - CHECK_INTERVAL=3600  # how often to check for wanted tracks (seconds)
